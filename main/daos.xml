@@ -7,7 +7,7 @@
     <bean id="stub" class="net.basicSpingApp.gipost.service.impl.DBImpl" scope="singleton">
     </bean>
 
-    <bean id="groupDAO" class="net.basicSpingApp.gipost.service.impl.GroupDAOStubImpl" abstract="true">
+    <bean id="groupDAO" class="net.basicSpingApp.gipost.service.impl.GroupDAOStubImpl">
         <property name="impl">
             <ref bean="stub"/>
         </property>
